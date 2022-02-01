@@ -89,7 +89,7 @@ class MuviNetworkModule(private val url: String) {
         return Interceptor { chain ->
             val original = chain.request()
             val requestUrl = original
-                .url()
+                .url
                 .newBuilder()
                 .addQueryParameter("api_key", BuildConfig.API_KEY)
                 .build()
@@ -102,8 +102,8 @@ class MuviNetworkModule(private val url: String) {
 
     private fun addCertificate(): CertificatePinner {
         return CertificatePinner.Builder()
-            .add(BuildConfig.HOST_BASE_URL, "sha256/+vqZVAzTqUP8BGkfl88yU7SQ3C8J2uNEa55B7RZjEg0=")
-            .add(BuildConfig.IMAGE_BASE_URL, "sha256/dkkdrQXG/soxr05PnqVNAas2Cl7nDyOp2iRkEHQ+wk0=")
+            .add(BuildConfig.HOST_NAME, "sha256/oD/WAoRPvbez1Y2dfYfuo4yujAcYHXdv1Ivb2v2MOKk=")
+            .add(BuildConfig.IMAGE_HOST_NAME, "sha256/dkkdrQXG/soxr05PnqVNAas2Cl7nDyOp2iRkEHQ+wk0=")
             .build()
     }
 
