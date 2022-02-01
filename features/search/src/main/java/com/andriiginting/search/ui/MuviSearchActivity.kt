@@ -72,7 +72,7 @@ class MuviSearchActivity : MuviBaseActivity<MuviSearchViewModel>() {
         searchBarTextChangeSubject
             .doOnNext { if (it.isBlank()) ivClearText.makeGone() else ivClearText.makeVisible() }
             .doOnNext { if (it.isBlank()) viewModel.onSearchTextCleared() }
-            .map { text -> text.toString().toLowerCase(Locale.getDefault()).trim() }
+            .map { text -> text.toString().lowercase(Locale.getDefault()).trim() }
             .debounce(DEBOUNCE_TIME_LIMIT, TimeUnit.MILLISECONDS)
             .filter { it.isNotBlank() }
             .subscribeOn(AndroidSchedulers.mainThread())
