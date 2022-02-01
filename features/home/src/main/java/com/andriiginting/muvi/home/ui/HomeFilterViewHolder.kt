@@ -40,7 +40,7 @@ class HomeFilterViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
     fun onFilterListener(action: (position: Int) -> Unit) {
         itemView.tvFilter.setOnClickListener {
-            action(adapterPosition)
+            action(bindingAdapterPosition)
         }
     }
 }
