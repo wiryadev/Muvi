@@ -4,7 +4,7 @@ import com.andriiginting.core_network.HomeBannerData
 import com.andriiginting.core_network.MovieResponse
 import com.andriiginting.muvi.home.data.MuviHomeRepository
 import com.andriiginting.uttils.singleIo
-import io.reactivex.Single
+import io.reactivex.rxjava3.core.Single
 import javax.inject.Inject
 
 interface MuviHomeUseCase {

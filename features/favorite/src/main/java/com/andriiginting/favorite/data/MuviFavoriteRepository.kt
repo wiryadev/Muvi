@@ -1,10 +1,8 @@
 package com.andriiginting.favorite.data
 
 import com.andriiginting.common_database.MuviDatabase
-import com.andriiginting.common_database.MuviFavoriteDAO
 import com.andriiginting.common_database.MuviFavorites
-import io.reactivex.Flowable
-import io.reactivex.Single
+import io.reactivex.rxjava3.core.Flowable
 import javax.inject.Inject
 
 interface MuviFavoriteRepository {

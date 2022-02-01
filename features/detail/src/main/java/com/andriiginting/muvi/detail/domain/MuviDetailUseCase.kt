@@ -5,8 +5,8 @@ import com.andriiginting.core_network.MovieItem
 import com.andriiginting.muvi.detail.data.MuviDetailRepository
 import com.andriiginting.uttils.maybeIo
 import com.andriiginting.uttils.singleIo
-import io.reactivex.Maybe
-import io.reactivex.Single
+import io.reactivex.rxjava3.core.Maybe
+import io.reactivex.rxjava3.core.Single
 import javax.inject.Inject
 
 interface MuviDetailUseCase {

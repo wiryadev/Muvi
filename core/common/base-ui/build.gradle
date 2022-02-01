@@ -11,7 +11,7 @@ dependencies {
     implementation supportDependencies.recyclerView
 
     implementation libraries.dagger
-    implementation libraries.rx2Java
+    implementation libraries.rxJava
     implementation libraries.lifecycleViewModel
     kapt libraries.daggerCompiler
 }

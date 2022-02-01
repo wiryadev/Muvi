@@ -2,7 +2,7 @@ package com.andriiginting.core_network
 
 import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
-import io.reactivex.Single
+import io.reactivex.rxjava3.core.Single
 import kotlinx.android.parcel.Parcelize
 import retrofit2.http.GET
 

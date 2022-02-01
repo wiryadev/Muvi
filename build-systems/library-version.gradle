@@ -8,7 +8,6 @@ ext {
     coroutineVersion = "1.6.0"
     androidCoreVersion = "1.7.0"
     daggerVersion = "2.40.5"
-    rxJavaVersion = "1.3.0"
     deeplinkDispatchVersion = "4.1.0"
 
     okhttpVersion = '4.9.3'
@@ -33,14 +32,12 @@ ext {
             daggerAndroidSupport     : "com.google.dagger:dagger-android-support:${daggerVersion}",
             daggerAndroidCompiler    : "com.google.dagger:dagger-android-processor:${daggerVersion}",
             javaxAnnotation          : "org.glassfish:javax.annotation:10.0-b28",
-            rx2Java                  : "io.reactivex.rxjava2:rxjava:2.2.12",
-            rx2Android               : "io.reactivex.rxjava2:rxandroid:2.0.2",
-            rxAndroid                : "io.reactivex:rxandroid:1.2.1",
-            rxKotlin2                : "io.reactivex.rxjava2:rxkotlin:2.4.0",
+            rxJava                   : "io.reactivex.rxjava3:rxjava:3.1.3",
+            rxAndroid                : "io.reactivex.rxjava3:rxandroid:3.0.0",
             gson                     : "com.google.code.gson:gson:2.8.9",
             retrofit2                : "com.squareup.retrofit2:retrofit:${retrofitVersion}",
             retrofit2Gson            : "com.squareup.retrofit2:converter-gson:${retrofitVersion}",
-            retrofit2Rx2             : "com.squareup.retrofit2:adapter-rxjava2:${retrofitVersion}",
+            retrofit2RxJava          : "com.squareup.retrofit2:adapter-rxjava3:${retrofitVersion}",
             okhttp3                  : "com.squareup.okhttp3:okhttp:${okhttpVersion}",
             okhttp3Logging           : "com.squareup.okhttp3:logging-interceptor:${okhttpVersion}",
             glide                    : "com.github.bumptech.glide:glide:4.12.0",
@@ -56,7 +53,7 @@ ext {
             timber                   : "com.jakewharton.timber:timber:5.0.1",
             roomRuntime              : "androidx.room:room-runtime:${roomVersion}",
             roomCompiler             : "androidx.room:room-compiler:${roomVersion}",
-            roomRxJava               : "androidx.room:room-rxjava2:${roomVersion}",
+            roomRxJava               : "androidx.room:room-rxjava3:${roomVersion}",
             kotlinCore               : "androidx.core:core-ktx:${androidCoreVersion}",
             lottie                   : "com.airbnb.android:lottie:${lottieVersion}",
             deeplinkDispatch         : "com.airbnb:deeplinkdispatch:${deeplinkDispatchVersion}",

@@ -5,8 +5,8 @@ import com.andriiginting.core_network.DetailsMovieData
 import com.andriiginting.core_network.MovieItem
 import com.andriiginting.muvi.detail.domain.MuviDetailUseCase
 import com.andriiginting.uttils.singleIo
-import io.reactivex.android.schedulers.AndroidSchedulers
-import io.reactivex.schedulers.Schedulers
+import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers
+import io.reactivex.rxjava3.schedulers.Schedulers
 import timber.log.Timber
 import javax.inject.Inject
 
@@ -60,9 +60,7 @@ class MuviDetailViewModel @Inject constructor(
     fun checkFavoriteMovie(movieId: String) {
         useCase.checkFavoriteMovie(movieId)
             .subscribe({ data ->
-                if (data != null) {
-                    _state.value = MovieDetailViewState.FavoriteMovie(true)
-                }
+                _state.value = MovieDetailViewState.FavoriteMovie(true)
             }, { error ->
                 Timber.e(error, "failed to remove favorite movie")
                 _state.value = MovieDetailViewState.FavoriteMovie(false)

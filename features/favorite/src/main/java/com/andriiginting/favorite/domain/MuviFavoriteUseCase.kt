@@ -4,7 +4,7 @@ import com.andriiginting.common_database.MuviFavorites
 import com.andriiginting.core_network.MovieItem
 import com.andriiginting.favorite.data.MuviFavoriteRepository
 import com.andriiginting.uttils.flowableIo
-import io.reactivex.Flowable
+import io.reactivex.rxjava3.core.Flowable
 import javax.inject.Inject
 
 interface MuviFavoriteUseCase {

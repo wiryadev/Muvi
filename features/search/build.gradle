@@ -23,12 +23,12 @@ dependencies {
     kapt libraries.daggerCompiler
     implementation libraries.javaxInject
     implementation libraries.javaxAnnotation
-    implementation libraries.rx2Java
-    implementation libraries.rx2Android
+    implementation libraries.rxJava
+    implementation libraries.rxAndroid
     implementation libraries.gson
     implementation libraries.retrofit2
     implementation libraries.retrofit2Gson
-    implementation libraries.retrofit2Rx2
+    implementation libraries.retrofit2RxJava
     implementation libraries.okhttp3
     implementation libraries.glide
     implementation libraries.deeplinkDispatch

@@ -1,11 +1,12 @@
 package com.andriiginting.uttils
 
-import io.reactivex.FlowableTransformer
-import io.reactivex.MaybeTransformer
-import io.reactivex.ObservableTransformer
-import io.reactivex.SingleTransformer
-import io.reactivex.android.schedulers.AndroidSchedulers
-import io.reactivex.schedulers.Schedulers
+import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers
+import io.reactivex.rxjava3.core.FlowableTransformer
+import io.reactivex.rxjava3.core.MaybeTransformer
+import io.reactivex.rxjava3.core.ObservableTransformer
+import io.reactivex.rxjava3.core.SingleTransformer
+import io.reactivex.rxjava3.schedulers.Schedulers
+
 
 fun <T> singleIo(): SingleTransformer<T, T> {
     return SingleTransformer { upstream ->

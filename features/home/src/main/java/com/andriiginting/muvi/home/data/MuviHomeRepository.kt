@@ -2,7 +2,7 @@ package com.andriiginting.muvi.home.data
 
 import com.andriiginting.core_network.MovieResponse
 import com.andriiginting.core_network.MuviHomeService
-import io.reactivex.Single
+import io.reactivex.rxjava3.core.Single
 import javax.inject.Inject
 
 interface MuviHomeRepository {

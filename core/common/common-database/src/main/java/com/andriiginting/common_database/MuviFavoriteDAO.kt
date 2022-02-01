@@ -7,8 +7,8 @@ import androidx.room.Query
 import com.andriiginting.common_database.Constants.DELETE_FAVORITE_MOVIE_WITH_ID
 import com.andriiginting.common_database.Constants.FILTER_FAVORITE_MOVIE_WITH_ID
 import com.andriiginting.common_database.Constants.GET_ALL_FAVORITE_MOVIE
-import io.reactivex.Flowable
-import io.reactivex.Maybe
+import io.reactivex.rxjava3.core.Flowable
+import io.reactivex.rxjava3.core.Maybe
 
 @Dao
 interface MuviFavoriteDAO {

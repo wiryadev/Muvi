@@ -11,8 +11,8 @@ import com.andriiginting.navigation.DetailNavigator
 import com.andriiginting.search.R
 import com.andriiginting.search.di.MuviSearchInjector
 import com.andriiginting.uttils.*
-import io.reactivex.android.schedulers.AndroidSchedulers
-import io.reactivex.subjects.PublishSubject
+import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers
+import io.reactivex.rxjava3.subjects.PublishSubject
 import kotlinx.android.synthetic.main.activity_muvi_search.*
 import java.util.*
 import java.util.concurrent.TimeUnit
