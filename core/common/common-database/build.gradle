@@ -8,7 +8,7 @@ dependencies {
     implementation libraries.roomRxJava
     implementation libraries.sqlChiper
     implementation libraries.sqlKTX
-    implementation libraries.lifecycleExtentions
+    implementation libraries.lifecycleViewModel
     kapt libraries.daggerCompiler
     kapt libraries.roomCompiler
 }

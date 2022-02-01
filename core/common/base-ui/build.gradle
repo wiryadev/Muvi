@@ -12,6 +12,6 @@ dependencies {
 
     implementation libraries.dagger
     implementation libraries.rx2Java
-    implementation libraries.lifecycleExtentions
+    implementation libraries.lifecycleViewModel
     kapt libraries.daggerCompiler
 }

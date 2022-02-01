@@ -19,7 +19,7 @@ ext {
 
     /** Android support libs + architecture*/
     supportLibraryVersion = '1.0.0'
-    lifecycleVersion = '2.2.0'
+    lifecycleVersion = '2.4.0'
     navigationVersion = '2.3.0'
     archCoreTestingVersion = '2.1.0'
     constraintLayoutVersion = '2.1.3'
@@ -48,13 +48,13 @@ ext {
             glideOkHttp3             : "com.github.bumptech.glide:okhttp3-integration:1.5.0",
             javaxInject              : "javax.inject:javax.inject:1",
             multidex                 : "androidx.multidex:multidex:2.0.1",
-            lifecycleRuntime         : "androidx.lifecycle:lifecycle-runtime:${lifecycleVersion}",
-            lifecycleExtentions      : "androidx.lifecycle:lifecycle-extensions:${lifecycleVersion}",
+            lifecycleRuntime         : "androidx.lifecycle:lifecycle-runtime-ktx:${lifecycleVersion}",
+            lifecycleViewModel       : "androidx.lifecycle:lifecycle-viewmodel-ktx:${lifecycleVersion}",
+            liveDataKtx              : "androidx.lifecycle:lifecycle-livedata-ktx:${lifecycleVersion}",
             lifecycleCompiler        : "androidx.lifecycle:lifecycle-compiler:${lifecycleVersion}",
             navigationUi             : "androidx.navigation:navigation-ui-ktx:${navigationVersion}",
             navigationDynamic        : "androidx.navigation:navigation-dynamic-features-fragment:${navigationVersion}",
             navigationFragment       : "androidx.navigation:navigation-fragment-ktx:${navigationVersion}",
-            liveDataKtx              : "androidx.lifecycle:lifecycle-livedata-ktx:${lifecycleVersion}",
             kotlin                   : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion",
             timber                   : "com.jakewharton.timber:timber:5.0.1",
             roomRuntime              : "androidx.room:room-runtime:${roomVersion}",

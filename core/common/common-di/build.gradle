@@ -8,6 +8,6 @@ dependencies {
 
     implementation libraries.dagger
     implementation libraries.retrofit2
-    implementation libraries.lifecycleExtentions
+    implementation libraries.lifecycleViewModel
     kapt libraries.daggerCompiler
 }
