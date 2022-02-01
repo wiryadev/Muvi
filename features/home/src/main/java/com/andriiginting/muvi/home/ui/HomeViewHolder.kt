@@ -25,7 +25,7 @@ class HomeViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
     fun setPosterAction(action: (position: Int) -> Unit) {
         itemView.setOnClickListener {
-            action.invoke(adapterPosition)
+            action.invoke(bindingAdapterPosition)
         }
     }
 }
