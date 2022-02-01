@@ -15,7 +15,7 @@ ext {
     okhttpVersion = '4.9.3'
     retrofitVersion = "2.9.0"
 
-    lottieVersion = '3.4.2'
+    lottieVersion = '4.2.1'
 
     /** Android support libs + architecture*/
     supportLibraryVersion = '1.0.0'

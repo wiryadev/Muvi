@@ -11,4 +11,5 @@ dependencies {
     implementation libraries.lottie
     implementation libraries.glide
     implementation supportDependencies.recyclerView
+    implementation supportDependencies.appCompat
 }
