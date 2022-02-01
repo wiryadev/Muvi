@@ -3,7 +3,6 @@ package com.andriiginting.search.ui
 import android.view.inputmethod.EditorInfo
 import android.widget.TextView
 import androidx.fragment.app.FragmentActivity
-import androidx.lifecycle.Observer
 import com.airbnb.deeplinkdispatch.DeepLink
 import com.andriiginting.base_ui.MuviBaseActivity
 import com.andriiginting.base_ui.MuviBaseAdapter
@@ -58,7 +57,7 @@ class MuviSearchActivity : MuviBaseActivity<MuviSearchViewModel>() {
     }
 
     private fun keyboardEditActionListener() =
-        TextView.OnEditorActionListener { v, actionId, event ->
+        TextView.OnEditorActionListener { v, actionId, _ ->
             if (actionId == EditorInfo.IME_ACTION_SEARCH) {
                 hideKeyboard()
                 searchBarTextChangeSubject.onNext(v.text)
@@ -110,7 +109,7 @@ class MuviSearchActivity : MuviBaseActivity<MuviSearchViewModel>() {
     }
 
     private fun setupObserverCommand() {
-        viewModel.state.observe(this, Observer { state ->
+        viewModel.state.observe(this) { state ->
             when (state) {
                 is MuviSearchViewState.ShowLoading -> {
                     searchAdapter.clear()
@@ -137,7 +136,7 @@ class MuviSearchActivity : MuviBaseActivity<MuviSearchViewModel>() {
                 }
                 MuviSearchViewState.ClearText -> clearSearchBar()
             }
-        })
+        }
     }
 
     companion object {
