@@ -5,11 +5,11 @@ apply plugin: 'kotlin-kapt'
 apply from: "$rootDir/build-systems/muvi-unit-test-config.gradle"
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion 32
 
     defaultConfig {
         minSdkVersion 19
-        targetSdkVersion 30
+        targetSdkVersion 32
         versionCode 1
         versionName "1.0"
         applicationId "com.andriiginting.muvi"
