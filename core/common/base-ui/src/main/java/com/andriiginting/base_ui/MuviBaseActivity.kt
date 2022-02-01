@@ -24,7 +24,7 @@ abstract class MuviBaseActivity<V : ViewModel> : AppCompatActivity() {
         setupInjector()
         setContentView(getLayoutId())
 
-        viewModel = ViewModelProvider(setObserver(), viewModelFactory).get(setViewModel())
+        viewModel = ViewModelProvider(setObserver(), viewModelFactory)[setViewModel()]
         setUpStatusBarColor()
     }
 
