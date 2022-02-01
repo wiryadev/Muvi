@@ -29,10 +29,8 @@ dependencies {
     implementation libraries.retrofit2
     implementation libraries.retrofit2Gson
     implementation libraries.retrofit2Rx2
-    implementation libraries.rxRelay
     implementation libraries.okhttp3
     implementation libraries.glide
-    implementation libraries.RxBinding
     implementation libraries.deeplinkDispatch
     kapt libraries.deeplinkDispatchProcessor
 

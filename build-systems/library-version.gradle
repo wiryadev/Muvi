@@ -53,7 +53,6 @@ ext {
             navigationUi             : "androidx.navigation:navigation-ui-ktx:${navigationVersion}",
             navigationDynamic        : "androidx.navigation:navigation-dynamic-features-fragment:${navigationVersion}",
             navigationFragment       : "androidx.navigation:navigation-fragment-ktx:${navigationVersion}",
-            kotlin                   : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion",
             timber                   : "com.jakewharton.timber:timber:5.0.1",
             roomRuntime              : "androidx.room:room-runtime:${roomVersion}",
             roomCompiler             : "androidx.room:room-compiler:${roomVersion}",
@@ -65,8 +64,6 @@ ext {
             stetho                   : "com.facebook.stetho:stetho:$stethoVersion",
             shimmer                  : 'com.facebook.shimmer:shimmer:0.5.0',
             leakCanary               : 'com.squareup.leakcanary:leakcanary-android:2.8.1',
-            rxRelay                  : 'com.jakewharton.rxrelay2:rxrelay:2.0.0',
-            RxBinding                : 'com.jakewharton.rxbinding3:rxbinding:3.0.0',
             sqlCipher                : "net.zetetic:android-database-sqlcipher:4.5.0",
             sqlKTX                   : "androidx.sqlite:sqlite-ktx:2.2.0"
     ]
@@ -95,7 +92,7 @@ ext {
 
     testLibraries = [
             coreTesting   : "androidx.arch.core:core-testing:${archCoreTestingVersion}",
-            junit         : "junit:junit:4.13",
+            junit         : "junit:junit:4.13.2",
             mockitoCore   : "org.mockito:mockito-core:$mockitoCore",
             mockitoAndroid: "org.mockito:mockito-android:$mockitoCore",
             junitRunner   : 'org.junit.platform:junit-platform-runner:1.4.0',
