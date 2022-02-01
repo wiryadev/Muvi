@@ -24,7 +24,7 @@ project.afterEvaluate {
             description = "Generate Jacoco coverage reports for the ${variantName.capitalize()} build"
 
             reports {
-                html.enabled = true
+                html.required.set = true
                 xml.enabled = false
                 csv.enabled = false
             }

@@ -7,7 +7,6 @@ import com.andriiginting.uttils.maybeIo
 import com.andriiginting.uttils.singleIo
 import io.reactivex.Maybe
 import io.reactivex.Single
-import io.reactivex.functions.BiFunction
 import javax.inject.Inject
 
 interface MuviDetailUseCase {
@@ -25,11 +24,10 @@ class MuviDetailUseCaseImpl @Inject constructor(
     override fun getDetailMovies(movieId: String): Single<DetailsMovieData> {
         return Single.zip(
             repository.getDetailMovie(movieId),
-            repository.getSimilarMovie(movieId).map { it.resultsIntent },
-            BiFunction { movieItem, similarMovies ->
-                DetailsMovieData(similarMovies, movieItem)
-            }
-        )
+            repository.getSimilarMovie(movieId).map { it.resultsIntent }
+        ) { movieItem, similarMovies ->
+            DetailsMovieData(similarMovies, movieItem)
+        }
     }
 
     override fun storeToDatabase(data: MovieItem): Single<Long> {

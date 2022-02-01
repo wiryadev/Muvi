@@ -3,7 +3,6 @@ package com.andriiginting.muvi.detail
 import android.os.Bundle
 import android.widget.Toast
 import androidx.fragment.app.FragmentActivity
-import androidx.lifecycle.Observer
 import com.airbnb.deeplinkdispatch.DeepLink
 import com.andriiginting.base_ui.MuviBaseActivity
 import com.andriiginting.base_ui.MuviBaseAdapter
@@ -92,7 +91,7 @@ class MuviDetailActivity : MuviBaseActivity<MuviDetailViewModel>() {
     }
 
     private fun setUpObserver() {
-        viewModel.state.observe(this, Observer { state ->
+        viewModel.state.observe(this) { state ->
             when (state) {
                 is MovieDetailViewState.ShowLoading -> {
                     pbDetailScreen.makeVisible()
@@ -158,7 +157,7 @@ class MuviDetailActivity : MuviBaseActivity<MuviDetailViewModel>() {
                     setUpFavoriteButton(state.isFavorite)
                 }
             }
-        })
+        }
     }
 
     companion object {

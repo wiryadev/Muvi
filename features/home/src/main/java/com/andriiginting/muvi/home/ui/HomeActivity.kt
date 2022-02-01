@@ -1,7 +1,6 @@
 package com.andriiginting.muvi.home.ui
 
 import androidx.fragment.app.FragmentActivity
-import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.RecyclerView
 import com.andriiginting.base_ui.MuviBaseActivity
 import com.andriiginting.base_ui.MuviBaseAdapter
@@ -102,7 +101,7 @@ class HomeActivity : MuviBaseActivity<MuviHomeViewModel>() {
     }
 
     private fun setupObserver() {
-        viewModel.bannerState.observe(this, Observer { state ->
+        viewModel.bannerState.observe(this) { state ->
             when (state) {
                 is HomeBannerState.BannerError -> {
                     cardBannerView.makeGone()
@@ -119,9 +118,9 @@ class HomeActivity : MuviBaseActivity<MuviHomeViewModel>() {
                     }
                 }
             }
-        })
+        }
 
-        viewModel.state.observe(this, Observer { state ->
+        viewModel.state.observe(this) { state ->
             when (state) {
                 is HomeViewState.ShowLoading -> {
                     ivLoadingIndicator.apply {
@@ -157,6 +156,6 @@ class HomeActivity : MuviBaseActivity<MuviHomeViewModel>() {
                     layoutEmpty.showEmptyScreen()
                 }
             }
-        })
+        }
     }
 }

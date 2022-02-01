@@ -1,7 +1,6 @@
 package com.andriiginting.favorite.presentation
 
 import androidx.fragment.app.FragmentActivity
-import androidx.lifecycle.Observer
 import com.airbnb.deeplinkdispatch.DeepLink
 import com.andriiginting.base_ui.MuviBaseActivity
 import com.andriiginting.base_ui.MuviBaseAdapter
@@ -56,7 +55,7 @@ class FavoriteActivity : MuviBaseActivity<MuviFavoriteViewModel>() {
     }
 
     private fun setUpObserver() {
-        viewModel.state.observe(this, Observer { state ->
+        viewModel.state.observe(this) { state ->
             when (state) {
                 is FavoriteViewState.ShowLoading -> {
                     ivLoadingIndicator.apply {
@@ -90,6 +89,6 @@ class FavoriteActivity : MuviBaseActivity<MuviFavoriteViewModel>() {
                     rvFavorite.makeGone()
                 }
             }
-        })
+        }
     }
 }
