@@ -74,8 +74,8 @@ ext {
     ]
 
     supportDependencies = [
-            design          : "com.google.android.material:material:1.2.0-beta01",
-            recyclerView    : "androidx.recyclerview:recyclerview:1.0.0",
+            design          : "com.google.android.material:material:1.5.0",
+            recyclerView    : "androidx.recyclerview:recyclerview:1.2.1",
             cardView        : "androidx.cardview:cardview:1.0.0",
             appCompat       : "androidx.appcompat:appcompat:1.1.0-rc01",
             constraintLayout: "androidx.constraintlayout:constraintlayout:${constraintLayoutVersion}",
